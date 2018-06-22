@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/firstView">
+
+    <custom_view
+        android:id="@+id/firstView"
+        android:label="FirstView"
+        app:layout="@layout/first_view">
+        <action
+            android:id="@+id/action_firstView_to_secondView"
+            app:destination="@id/secondView" />
+    </custom_view>
+
+    <custom_view
+        android:id="@+id/secondView"
+        android:label="SecondView"
+        app:layout="@layout/second_view">
+        <action
+            android:id="@+id/action_secondView_to_thirdView"
+            app:destination="@id/thirdView" />
+    </custom_view>
+
+    <custom_view
+        android:id="@+id/thirdView"
+        android:label="ThirdView"
+        app:layout="@layout/third_view" />
+</navigation>

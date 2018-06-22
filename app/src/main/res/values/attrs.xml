@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomNavHost">
+        <attr name="navGraph" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomNavigator">
+        <attr name="layout" format="reference" />
+    </declare-styleable>
+</resources>
